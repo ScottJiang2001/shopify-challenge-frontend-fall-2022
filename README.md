@@ -8,9 +8,9 @@ This app allows a user to enter any long prompt, select a GPT-3 engine and summa
 React - Sassy CSS - Material UI
 
 ## Getting Started
- 
-### `yarn install`
-
+```
+yarn install
+```
 After cloning the repo, run the above to install all required dependencies
 
 ### Getting your API key
@@ -22,7 +22,7 @@ After cloning the repo, run the above to install all required dependencies
    REACT_APP_OPENAI_API_SECRET={OPEN_AI_API_KEY}
    ```
 4. Run in development:
-  ```
+   ```
    yarn start
    ```
   Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
