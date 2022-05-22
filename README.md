@@ -18,13 +18,13 @@ After cloning the repo, run the above to install all required dependencies
 1. Start by making an account at [https://beta.openai.com/signup](https://beta.openai.com/signup)
 2. After making an account, get your API key by going to [https://beta.openai.com/account/api-keys]( https://beta.openai.com/account/api-keys)
 3. Make a `.env` file at your root directory and add your API key 
-  ```
-   REACT_APP_OPENAI_API_SECRET={OPEN_AI_API_KEY}
-   ```
+ ```
+ REACT_APP_OPENAI_API_SECRET={OPEN_AI_API_KEY}
+ ```
 4. Run in development:
-   ```
-   yarn start
-   ```
+ ```
+ yarn start
+ ```
   Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### Roadmap
