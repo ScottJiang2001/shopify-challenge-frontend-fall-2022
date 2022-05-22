@@ -24,8 +24,6 @@ const PromptSubmission = (props) => {
 		setLoading(true);
 
 		if (wordCount < 20) {
-			console.log("error!");
-			console.log(wordCount);
 			setError(true);
 
 			setTimeout(() => {
@@ -118,22 +116,17 @@ const PromptSubmission = (props) => {
 				/>
 			</div>
 			{points && engine && (
-				<div className = "submit-description">
+				<div className="submit-description">
 					<p>
-						Summarize your prompt into {" "}
-						<strong>
-							{points} points
-						</strong>{" "}
-						using the <strong>{engine}</strong> engine
+						Summarize your prompt into <strong>{points} points</strong> using
+						the <strong>{engine}</strong> engine
 					</p>
 				</div>
 			)}
 			{error && (
 				<div className="error-message">
 					<p>
-						<strong>
-							Please ensure your prompt is longer than 20 words 
-						</strong>
+						<strong>Please ensure your prompt is longer than 20 words</strong>
 					</p>
 				</div>
 			)}
