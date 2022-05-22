@@ -1,0 +1,64 @@
+.App {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	align-items: center;
+
+	font-family: "Montserrat", sans-serif;
+
+	.summary-section {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+
+		.summary-card {
+			background-color: white;
+			margin: 10px;
+			display: flex;
+			flex-direction: column;
+			width: 70%;
+			padding: 20px;
+			border-radius: 20px;
+			border-style: solid;
+			border-color: #008060;
+
+			.prompt-summary {
+				display: flex;
+				flex-direction: row;
+
+				@media only screen and (max-width: 600px) {
+					flex-direction: column;
+				}
+
+				.prompt {
+					width: 60%;
+					margin-right: 20px;
+
+					@media only screen and (max-width: 600px) {
+						width: fit-content;
+					}
+				}
+
+				.summary {
+					width: 40%;
+					white-space: pre-wrap;
+
+					@media only screen and (max-width: 600px) {
+						width: fit-content;
+					}
+				}
+			}
+
+			.engine {
+				// margin: 20px;
+				margin-top: 5px;
+				background: #008060;
+				padding: 10px;
+				width: fit-content;
+				color: white;
+				border-radius: 5px;
+			}
+		}
+	}
+}

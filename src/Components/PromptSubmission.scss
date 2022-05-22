@@ -1,0 +1,39 @@
+.prompt-submission {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    width: 100%;
+
+	.error-message {
+		color: #D82C0D;
+		margin: 0px 40px;
+	}
+
+	.text-input {
+		max-width: 750px;
+		width: 60%;
+		padding-bottom: 20px;
+	}
+
+	.submit-button {
+		padding-bottom: 20px;
+	}
+	.selection-options {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 30%;
+		margin-bottom: 20px;
+
+		.engine-selection {
+			width: 50%;
+		}
+		.point-selection {
+			width: 40%;
+		}
+	}
+
+	.submit-description {
+		margin: 0px 40px;
+	}
+}
