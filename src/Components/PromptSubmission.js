@@ -65,7 +65,6 @@ const PromptSubmission = (props) => {
 		);
 
 		const summary = await response.json();
-		console.log(summary.choices[0].text.trim());
 		props.addSummary(prompt, summary.choices[0].text.trim(), engine);
 
 		setPrompt("");
@@ -123,7 +122,7 @@ const PromptSubmission = (props) => {
 					<p>
 						Summarize your prompt into {" "}
 						<strong>
-							{points} {points === 1 ? "point" : "points"}
+							{points} points
 						</strong>{" "}
 						using the <strong>{engine}</strong> engine
 					</p>
